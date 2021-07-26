@@ -4,16 +4,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Environment Setup
 
-step1: Install node latest version. In this proeject v14.17.3 is installed
-Step2: Install npm latest version(6.14.13) with command "npm install -g"
-Step3: Install Angular with command "npm install -g @angular/cli @angular/core"
-Step5: Create a Flickr account and get your API key.
+- step1: Install node latest version. In this proeject v14.17.3 is installed
+- Step2: Install npm latest version(6.14.13) with command "npm install -g"
+- Step3: Install Angular with command "npm install -g @angular/cli @angular/core"
+- Step4: Create a Flickr account and get your API key.
 
 The key needs to be add pn envirment.ts file.
 
 ## Library Included
-Bootstrap(ngx-bootstrap)
-Infinite Scroll(ngx-infinite-scroll)
+- Bootstrap(ngx-bootstrap)
+- Infinite Scroll(ngx-infinite-scroll)
 
 ## Development server
 
