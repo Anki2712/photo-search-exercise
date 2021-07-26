@@ -1,0 +1,36 @@
+<div class="pageMargin">
+  <form class="form-inline waves-light searchAlignment" mdbWavesEffect>
+    <div class="md-form mt-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" (keyup)="searchImage($event)">
+    </div>
+  </form>
+    <!-- <input type="search" (keyup)="searchImage($event)"> -->
+    <div>
+    <div class="spinner-border centerLoader" role="status" *ngIf="showLoader">
+        <span class="visually-hidden" #spinner>Loading...</span>
+      </div>
+        <ul class="list-unstyled" *ngFor="let image of images">
+            <li class="media">
+                <img src={{image.url}} (click)="showDetail(image)">
+            </li>
+          </ul>
+          <div
+          class="search-results"
+          infiniteScroll
+          [infiniteScrollDistance]="2"
+          [infiniteScrollThrottle]="50"
+          (scrolled)="onScroll()">
+        </div>
+</div>
+
+</div>
+<div #myModal class="modal">
+    <div *ngIf="IspreviewImage">
+    <span class="close">&times;</span>
+    <img src={{previewImage.url}}>
+    <div class="media-body">
+        <h5 class="mt-0 mb-1">{{previewImage.title}}</h5>
+      </div>
+    </div>
+  </div>
+
